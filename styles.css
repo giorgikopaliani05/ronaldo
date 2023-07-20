@@ -1,0 +1,218 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* link color*/
+.clicked {
+  background-color: white;
+  color: black;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #fff; /* White text color */
+  background-color: #000; /* Full black background */
+}
+
+/* Header styles */
+header {
+  background-color: #000; /* Black header background */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  position: fixed;
+  width:100%;
+  top:0;
+  height: 50px;
+}
+
+header img {
+  height: 70px;
+  width: 90px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header h1 {
+  display: flex;
+  font-size: 24px;
+  justify-content: flex-start;
+  font-size: 50px;
+}
+
+/* List styles */
+ul.social-media-links {
+  list-style: none;
+}
+
+ul.social-media-links li {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff; /* White link color */
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text color on hover */
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-direction: column; /* To stack sections vertically */
+  align-items: center; /* To horizontally center the sections */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000; /* Black main content background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  text-align: center; /* Center the content within the section */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000; /* Black footer background */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media SVG */
+.media-svg {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* Button styles */
+button {
+  background-color: #000; /* Black button background */
+  color: #fff; /* White button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text color on hover */
+}
+
+/* JavaScript - Image Switching */
+#about-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+#change-image-btn:hover ~ #about-image {
+  transform: rotate(360deg);
+}
+
+.social-media-links-index {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+/* Search bar styles */
+header {
+  display: flex;
+  justify-content: space-between; /* Add this to align search bar to the right */
+  background-color: #000; /* Black header background */
+  color: #fff;
+  padding: 20px;
+}
+
+/* Search bar styles */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #002633;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Adjust the search bar layout on smaller screens */
+@media screen and (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .search-form button {
+    border-radius: 5px;
+  }
+}
+  
+
+  .search-form button {
+    border-radius: 5px;
+  }
